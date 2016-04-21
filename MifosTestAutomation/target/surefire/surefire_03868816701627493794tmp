@@ -1,9 +1,0 @@
-#surefire_0
-#Thu Apr 21 15:15:55 IST 2016
-resources.file.path=src\\test\\resources\\mifos.properties
-user.dir=C\:\\Automation--Initiative\\MifosTestAutomation
-webdriver.chrome.driver=C\:\\ChromeDriver\\chromedriver.exe
-localRepository=C\:\\Users\\Deepak\\.m2\\repository
-testing.framework.testdata.metadata=mifos-test-metadata.properties
-webdriver.factory.class.name=com.mifos.testing.framework.webdriver.FirefoxDriverFactory
-basedir=C\:\\Automation--Initiative\\MifosTestAutomation
