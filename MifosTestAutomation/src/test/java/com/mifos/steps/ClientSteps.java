@@ -166,10 +166,6 @@ public class ClientSteps {
 		varFrontPage.searchUser(user);
 	}
 
-	@Then("^I undo the disbursal$")
-	public void I_undo_the_disbursal() throws Throwable {
-		varFrontPage.undoDisbursal();
-	}
 
 	@Then("^I make reverse of transaction$")
 	public void I_make_reverse_of_transaction() throws Throwable {
@@ -188,6 +184,18 @@ public class ClientSteps {
 			}
 		}
 	   
+	}
+	
+	@Then("^I Do Undo Last Disbursement$")
+	public void I_Do_Undo_Last_Disbursement(List<List<String>> excel) throws Throwable {
+		
+		for (List<String> excelSheet : excel) {
+			for (int i = 1; i < excelSheet.size(); i++) {
+				varFrontPage.undoLastDisbursement(ExcelSheetPath, excelSheet.get(0),excelSheet.get(i));
+				
+			}
+		}
+		
 	}
 
 /*	@When("^I set up the new savings$")

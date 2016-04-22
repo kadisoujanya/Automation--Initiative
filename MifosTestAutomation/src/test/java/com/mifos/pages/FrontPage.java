@@ -1140,11 +1140,14 @@ public class FrontPage extends MifosWebPage {
 
 	}
 
-	public void undoDisbursal() throws InterruptedException {
-		clickButton(getResource("frontend.clients.clients.undodisbursal"),
-				"xpath");
-		clickButton(getResource("frontend.admin.createoffice.savebutton"), "id");
-		Thread.sleep(getResourceKey("mediumWait"));
+	public void undoLastDisbursement(String excelSheetPath, String excelSheetName, String sheetName) throws Throwable {
+		// TODO Auto-generated method stub
+
+		Map<String, String> newLoanDetailsMap = parseExcelSheet1(
+				excelSheetPath, excelSheetName, sheetName);
+		insertValues(newLoanDetailsMap);
+		Thread.sleep(getResourceKey("largeWait"));
+		
 	}
 
 	public void reverseTransaction() throws InterruptedException {/*
@@ -1200,6 +1203,8 @@ public class FrontPage extends MifosWebPage {
 																 * ; }
 																 */
 	}
+
+	
 
 	
 
