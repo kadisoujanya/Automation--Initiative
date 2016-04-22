@@ -165,12 +165,6 @@ public class ClientSteps {
 	public void I_search_with_on_mifos(String user) throws Throwable {
 		varFrontPage.searchUser(user);
 	}
-
-
-	@Then("^I make reverse of transaction$")
-	public void I_make_reverse_of_transaction() throws Throwable {
-		varFrontPage.reverseTransaction();
-	}
 	
 	/*
 	 * Then I "Edit Date " In Edit Repayment Schedule page
@@ -197,18 +191,5 @@ public class ClientSteps {
 		}
 		
 	}
-
-/*	@When("^I set up the new savings$")
-	public void I_set_up_the_new_savings(String sheetName,
-			List<String> excelSheetName) throws Throwable {
-		varFrontPage.createNewLoan(ExcelSheetPath, excelSheetName,
-				sheetName);
-	}*/
-
-/*	@When("^I make prepayloan and verified the following tabs$")
-	public void I_make_prepay_and_verified_the_following_tabs(DataTable excel)
-			throws Throwable {
-		varFrontPage.createMakeRepayment(ExcelSheetPath, excel);
-	}*/
 
 }
