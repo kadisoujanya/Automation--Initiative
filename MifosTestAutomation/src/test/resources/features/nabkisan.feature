@@ -28,6 +28,6 @@ Background:
     |Scenario1-NABKISAN-EARLY-TR1-Newcreateloan1.xlsx|
   Then I verified the "Transactions" details and read the transaction Id
 	|Scenario1-NABKISAN-EARLY-TR1-Newcreateloan1.xlsx|	
-  Then I make repayment and verified the following tabs
+  Then I make repayment and verified the following tab
     |Scenario1-NABKISAN-EARLY-TR1-Makerepayment1.xlsx|Input|Summary|Repayment Schedule|Transactions|
    
