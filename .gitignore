@@ -14,6 +14,7 @@ Servers/
 MifosTestAutomation/target/
 MifosTestAutomation/test-output/
 MifosTestingFramework/target/
+MifosTestAutomation/target/test-classes/
 *.index
 *.png
 *.snap

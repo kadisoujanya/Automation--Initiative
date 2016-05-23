@@ -6,7 +6,7 @@ Background:
 		| Login.xlsx  |
 	Then I should see logged in successfully
 	
-	@Scenario1-CHAITANYA-Undodisbursal-TR2
+@Scenario1-CHAITANYA-Undodisbursal-TR2
   Scenario: CHAITANYA-Undodisbursal-TR2
 
   Given I setup the clients
